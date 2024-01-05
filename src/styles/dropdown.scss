@@ -1,0 +1,25 @@
+.dropdown-section {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-header {
+    margin: 20px;
+    font-size: 40px;
+}
+
+.navigation {
+    display: flex;
+    gap: 30px;
+
+    > li {
+        padding: 20px 50px;
+
+        &:hover {
+            background-color: #f07effce;
+        }
+    }
+}
