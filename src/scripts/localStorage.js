@@ -1,3 +1,3 @@
 export default function saveLastLocation(location) {
-    localStorage.setItem('location', location)
+    localStorage.setItem('last location', location)
 }
