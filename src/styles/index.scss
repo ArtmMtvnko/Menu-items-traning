@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
 @import "./null-styles.scss";
 @import "./search-bar.scss";
+@import "./temperature.scss";
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -16,4 +17,12 @@ body {
     max-width: 1500px;
     height: 100%;
     border: 3px solid red;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 100%;
 }
