@@ -1,3 +1,5 @@
+import { temperature } from "./refreshUI"
+
 const redioButtonsTempreature = document.querySelectorAll('.temperature-button')
 
 const measurement = {
@@ -8,6 +10,12 @@ const measurement = {
 const symbols = {
     celsius: '℃',
     fahrenheit: '°F'
+}
+
+for (const button of redioButtonsTempreature) {
+    button.addEventListener('click', e => {
+        temperature.innerText = measurement[e.target.id] + symbols[e.target.id]
+    })
 }
 
 export function getTemperature(data) {
