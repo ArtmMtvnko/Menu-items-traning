@@ -1,3 +1,5 @@
+@import "./radio-button.scss";
+
 .temperature {
     flex: 1;
 
@@ -17,5 +19,14 @@
 
     > p {
         font-size: 2rem;
+    }
+}
+
+.temperature__sunstate {
+    margin: 10px 15px;
+    line-height: 1.7rem;
+
+    > p {
+        font-size: 1.25rem;
     }
 }
