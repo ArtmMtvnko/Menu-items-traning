@@ -1,6 +1,7 @@
 import saveLastLocation from './localStorage'
 import { fetchWeather } from './fetchWeater'
 import { refreshDataInUI } from './refreshUI'
+import { refreshCards } from './forecastCards'
 
 const form = document.querySelector('.search-form')
 const searchBar = document.querySelector('.search-bar')
@@ -17,6 +18,7 @@ form.addEventListener('submit', (e) => {
         console.log('Fahrenheit:', data.current.temp_f)
         saveLastLocation(data.location.name)
         refreshDataInUI(data)
+        refreshCards(data)
     })
     .catch(console.error)
 
